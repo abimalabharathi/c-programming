@@ -1,0 +1,15 @@
+#python function to find the repeated items of a tuple
+def find_repeated_items(tup):
+    item_count = {}
+
+    for item in tup:
+        if item in item_count:
+            item_count[item] += 1
+
+        else:
+            item_count[item] = 1
+   repeated_items =
+#main
+tuple = (1,2,3,4,3,6,2)
+repeated_items = find_repeated_items(tuple)
+print(f"Repeated items:{repeated_items}")
