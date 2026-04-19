@@ -1,0 +1,29 @@
+#python function to find the repeated items of a tuple
+def find_repeated_items(tup):
+    item_count = {}
+
+    for item in tup:
+        if item in item_count:
+            item_count[item] += 1
+
+        else:
+            item_count[item] = 1
+   repeated_items =
+#main
+tuple = (1,2,3,4,3,6,2)
+repeated_items = find_repeated_items(tuple)
+print(f"Repeated items:{repeated_items}")
+
+
+[24bec001@mepcolinux expt7]$cat prog5.py
+#python function concatenate two tuples and print it
+def concatenate_tuples(tuple1,tuple2):
+   result = tuple1 + tuple2
+   return result
+#main
+tuple_a = (1,2,3)
+tuple_b = (4,5,6)
+
+#Call the function and print
+resulting_tuple = concatenate_tuples(tuple_a, tuple_b)
+print("Resulting Tuple:",resulting_tuple)
