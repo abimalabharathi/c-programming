@@ -1,0 +1,28 @@
+#include<stdio.h>
+struct stu
+ {
+  int roll;
+   char n[50];
+   int m1,m2,total;
+   float avg;
+ }
+ x[100],y[100];
+  main()
+  {
+   FILE*fp;
+   fp=fopen("x1.bin","wb");
+   int n,i,rn;
+   printf("enter the no of students:");
+   scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+printf("enter the roll number:");
+scanf("%d",&x[i].roll);
+printf("enter the name of the student:");
+scanf("%s",&x[i].n);
+printf("enter the mark1");
+scanf("%d",&x[i].m1);
+printf("enter the mark2:");
+scanf("%d",&x[i].m2);
+x[i].total=x[i].m1+x[i].m2;
+x[i].avg=x[i].total/2.0;
