@@ -1,0 +1,12 @@
+#python function to unpack a tuple of four elements into four variables
+def unpack_tuple(tup):
+   if len(tup) != 4:
+      raise ValueError("Tuple must contain exactly four elements.")
+   a,b,c,d = tup
+   print(f"first element:{a}")
+   print(f"second element:{b}")
+   print(f"third element:{c}")
+   print(f"fourth element:{d}")
+#main
+tuple = (10,20,30,40)
+unpack_tuple(tuple)
