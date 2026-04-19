@@ -1,0 +1,11 @@
+#python function concatenate two tuples and print it
+def concatenate_tuples(tuple1,tuple2):
+   result = tuple1 + tuple2
+   return result
+#main
+tuple_a = (1,2,3)
+tuple_b = (4,5,6)
+
+#Call the function and print
+resulting_tuple = concatenate_tuples(tuple_a, tuple_b)
+print("Resulting Tuple:",resulting_tuple)
