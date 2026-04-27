@@ -1,0 +1,6 @@
+#program to find the square and cube of given number#
+a=int(input("Enter a"))
+c=a*a
+print("square is:",c)
+C=a*a*a
+print("cube is :",C)
