@@ -1,0 +1,15 @@
+#program to print the appropriate message
+t=input("enter a temperature:")
+h=input("enter a humidity:")
+if t=='warm':
+   if h=='dry':
+      print("play basketball")
+   else:
+      print("play tennis")
+elif t=='cold':
+   if h =='dry':
+      print("play cricket")
+   else:
+      print("swim")
+else:
+   print("none")
