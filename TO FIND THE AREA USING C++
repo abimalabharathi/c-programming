@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+class circle{
+	public:
+		double r;
+		double calcarea(){
+			return 3.14*r*r;
+		}
+		double calccircum(){
+			return 3.14*2*r;
+		}
+};
+int main(){
+	circle c;
+	cout<<"Enter the radius: ";
+	cin>>c.r;
+	cout<<"Circumference: "<<c.calccircum()<<endl;
+	cout<<"Area: "<<c.calcarea();
+	
+	return 0;
+}
