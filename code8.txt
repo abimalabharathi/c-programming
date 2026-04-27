@@ -1,0 +1,31 @@
+import re
+import sys
+
+def solve():
+    # Read the number of lines
+    try:
+        line = sys.stdin.readline()
+        if not line:
+            return
+        n = int(line.strip())
+    except EOFError:
+        return
+
+    # Process each line to find color codes
+    for _ in range(n):
+        line = sys.stdin.readline()
+        if not line:
+            break
+        
+        # Regex to find hex codes:
+        # 1. Matches '#'
+        # 2. Matches 3 or 6 hex digits ([0-9a-fA-F])
+        # 3. Uses a lookbehind (?<=[:\s]) to ensure it's not a selector
+        # 4. Uses a lookahead (?=[;,)]|\s|$) to ensure proper termination
+        matches = re.findall(r'(?<=[:\s])(#[a-fA-F0-9]{3}|#[a-fA-F0-9]{6})(?=[;,)]|\s|$)', line)
+        
+        for match in matches:
+            print(match)
+
+if __name__ == '__main__':
+    solve()
