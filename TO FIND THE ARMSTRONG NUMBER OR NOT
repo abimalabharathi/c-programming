@@ -1,0 +1,12 @@
+#program to find whether the given number is armstrong or not
+a=int(input("enter three digit number"))
+s=0
+t=a
+while t>0:
+   digit=t%10
+   s+=digit**3
+   t//=10
+if(a==s):
+      print("It is armstrong number")
+else:
+      print("It is not armstrong number")
